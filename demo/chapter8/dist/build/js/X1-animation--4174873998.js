@@ -1,0 +1,2 @@
+$(document).ready(function(){$(".section-future").hover(function(a){a.preventDefault(),$("#hand").animate({left:"800px"},"slow",function(){$("#screen").animate({opacity:"1",filter:"alpha(opacity=1)"},"fast",function(){$("#hand").animate({opacity:"0",filter:"alpha(opacity=0)"},"slow")})})},function(a){$("#screen").css({opacity:"0",filter:"alpha(opacity=0)"}),$("#hand").css({left:"-70px",opacity:"1",filter:"alpha(opacity=1)"})})});
+//# sourceMappingURL=X1-animation.js.map

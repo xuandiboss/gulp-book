@@ -1,0 +1,1 @@
+{"version":3,"sources":["a.less"],"names":[],"mappings":"AAAA,QAEQ,MAAA,KAFR,oBAKM,QAAA","file":"a.css","sourcesContent":[".less{\r\n    a{\r\n        color:pink;\r\n    }\r\n    .header nav a{\r\n      display:block;\r\n    }\r\n}"],"sourceRoot":"/source/"}

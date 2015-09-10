@@ -1,1 +1,0 @@
-{"version":3,"sources":["weather.js"],"names":["getWeather","城市","天气"],"mappings":"AAAA,YACAA,aACEC,KAAM,KACNC,KAAM","file":"weather.js","sourcesContent":["'use strict';\ngetWeather({\n  \"城市\": \"北京\",\n  \"天气\": \"大雾\"\n});"],"sourceRoot":"/source/"}

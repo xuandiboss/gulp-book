@@ -1,1 +1,67 @@
-"hello my first project page" 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="author" content="xuandi">
+        <meta name="keywords" content="demo">
+        <meta name="description" content="前端练习demo，http://web.jobbole.com/83412/">
+        <title>[JavaScript]四种跨域方式详解</title>
+        <!--base-CSS-begin-->
+        <style>
+            body{
+                background: #eee;
+                font: normal normal 16px/1.5 "微软雅黑",sans-serif;
+            }
+            .main{
+                max-width: 1000px;
+                background: #fff;
+                padding: 30px 10px;
+                margin: auto;
+                position: relative;
+                box-shadow: 2px 2px 10px 5px #555;
+                overflow: hidden;
+            }
+            .title{
+                border-bottom: 1px dotted #3399ff;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+            }
+            .footer{
+                margin-top: 20px;
+                border-top: 1px solid #a5a5a5;
+                text-align: center;
+                clear: both;
+            }
+        </style>
+        <!--base-CSS-end-->
+        <!--CSS-begin-->
+        <style>
+
+        </style>
+        <!--CSS-end-->
+    </head>
+    <body>
+        <!--HTML-begin-->
+        <div class="main">
+            <div class="title">
+              [JavaScript]四种跨域方式详解之postMessage
+            </div>
+            <div style="text-align: center">
+                <iframe id="iframe" width="480px" height="270px" src="http://frontend2.sinaapp.com/jobbole.com/postMessage.html"></iframe>
+            </div>
+            <div class="footer">
+                © xuandi Blog：<a href="http://xuandimail.blog.163.com/">xuandi</a>
+            </div>
+        </div>
+        <!--HTML-end-->
+        <!--Javascript-begin-->
+        <script type="text/javascript">
+            console.log(location.host + ': This would be the main JS file.');
+            window.name = 'This is window.name data.';
+
+            if(window != window.parent) {
+                window.parent.postMessage('Message from ' + location.host, '*');
+            }
+        </script>
+        <!--Javascript-end-->
+    </body>
+</html>

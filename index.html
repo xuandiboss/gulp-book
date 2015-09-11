@@ -31,6 +31,10 @@
             if(window != window.parent) {
                 window.parent.postMessage('Message from ' + location.host, '*');
             }
+
+            window.addEventListener('message', function(event){
+                console.log(event.data);
+            })
         </script>
         <!--Javascript-end-->
     </body>
